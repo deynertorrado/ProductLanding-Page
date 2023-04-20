@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <script
+      src="https://kit.fontawesome.com/172fb74960.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Landing Page</title> 
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container" id="home">
+
+      <!-- header -->
+      <header id="header">
+        <img src="https://www.laspalmasgc.es/export/sites/laspalmasgc/.galleries/imagenes-contenido-medio-ambiente/logo_PA.JPG" alt="pets" id="header-img">
+        <div class="header-img">
+          <i class="fab fa-gripfire"></i>
+          <span>pets</span>
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="#home" class="nav-link">home</a></li>
+            <li><a href="#about" class="nav-link">about</a></li>
+            <li><a href="#pricing" class="nav-link">pricing</a></li>
+            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- section -->
+      <div class="section-container">
+        <section class="section" id="about">
+          <i class="fas fa-dove"></i>
+          <h1 class="section__title">your best friend</h1>
+          <p class="section__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A ab magnam
+            sapiente reiciendis, enim et placeat cum nam beatae vero itaque dicta
+            sit vel tenetur labore aperiam, explicabo ratione inventore sed odio.
+            Neque temporibus atque unde necessitatibus consequatur totam vero
+            maiores, nisi accusantium quis? Quam dolores vitae ex ipsum aliquam!
+          </p>
+          
+          <!-- section-form -->
+          <section class="section__form">
+            <h2 class="section__form-title">your best friend is waiting for you</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+              <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email addres"
+              required
+              >
+              <input id="submit" type="submit" value="Contact us">
+            </form>
+          </section>
+        </section>
+      </div>
+        
+      <!-- section-video -->
+      <section class="section-video">
+        <iframe
+          id="video"
+          src="https://www.youtube-nocookie.com/embed/DlUyHogoyvE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- cards -->
+      <div class="cards-container" id="pricing">
+        <div class="card card-1">
+          <div class="card__logo">
+            <i class="fas fa-dog"></i>
+            <p class="card__title">Dogs</p>
+          </div>
+          <p class="card__prices">150</p>
+          <p class="card__info">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+            laudantium tempora quasi consectetur mollitia iste?
+          </p>
+          <a href="#" class="card__btn">Select</a>
+        </div>
+        <div class="card card-2">
+          <div class="card__logo">
+            <i class="fas fa-cat"></i>
+            <p class="card__title">Cats</p>
+          </div>
+          <p class="card__prices">300</p>
+          <p class="card__info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            necessitatibus quis inventore quia doloremque facilis.
+          </p>
+          <a href="#" class="card__btn">Select</a>
+        </div>
+        <div class="card card-3">
+          <div class="card__logo">
+            <i class="fas fa-paw"></i>
+            <p class="card__title">Pets</p>
+          </div>
+          <p class="card__prices">450</p>
+          <p class="card__info">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+            laudantium tempora quasi consectetur mollitia iste?
+          </p>
+          <a href="#" class="card__btn">Select</a>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__text">
+          &copy;Pets
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
